@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  html,
+  body {
+    @apply p-0 m-0;
+    @apply pb-[1rem];
+
+    @apply text-base;
+    @apply text-neutral-100;
+    @apply bg-neutral-900;
+
+    @apply select-none;
+  }
+
+  #main-view {
+    @apply space-y-4;
+    @apply w-full h-[calc(100vh-1.5rem)];
+    @apply overflow-scroll;
+  }
+
+  #fs-line {
+    @apply px-1;
+    @apply w-full;
+
+    @apply text-black;
+    @apply bg-white;
+
+    @apply select-all;
+  }
+
+  span.fs-content {
+    @apply border border-neutral-900;
+
+    @apply cursor-pointer;
+  }
+
+  .fs-content.fs-content-selected {
+    @apply border-white;
+  }
+}
